@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Harmonii - Clínica Odontológica</title>
+
+<!--Mapa Google-->   
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<!--Icone do site-->
+    <link rel="icon" href="favicon.ico.ico" type="image/icon">
+
+<!--Conversao Para web ou mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 768px)">
+
+</head>
+<body>
+<!--Logo-->
+    <header> 
+    <div class="navbar">
+        <div class="logo">   
+            <img src="images/imagenslogo-le-harmonii.png.png" alt="Logo Le Harmonii" />
+           </div>
+
+<!--Menu-->
+        <nav class="menu">
+          <ul>
+             <li><a href="#sobre">Sobre a Le Harmonii</a></li>
+             <li><a href="#Servico">Nossos Serviços</a></li>
+             <li><a href="#convenios">Convênios Parceiros</a></li>
+             <li><a href="#contato">Contato</a></li>
+           </ul> 
+         </nav>
+     </div> 
+
+<!--Botão mobile hambuger-->
+     <div class="hamburguer-btn" onclick="toggleMenu()">☰</div>
+
+    </header>
+<!--Slide tela Inicial-->
+<script>
+    document.addEventListener("DOMContentLoaded", function (){
+ let currentHomeSlide = 0;
+ const homeSlides = document.querySelectorAll('.home-slider .slide');
+
+ function showHomeSlide(index) {
+ homeSlides.forEach(slide => slide.classList.remove('active'));
+ homeSlides[index].classList.add('active');
+ }
+ function nextHomeSlide() {
+ currentHomeSlide = (currentHomeSlide + 1) % homeSlides.length;
+ showHomeSlide(currentHomeSlide);
+ }
+ setInterval(nextHomeSlide, 5000); // muda a cada 5 segundos
+});
+    </script>
+    <section id="home">
+        <div class="home-slider">
+        <div class="slide active">
+        <img src="imagens/gifpng.gif" alt="Imagem 1">
+        </div>
+        <div class="slide">
+        <img src="imagens/2.png.png" alt="Imagem 2">
+        </div>
+        <div class="slide">
+        <img src="imagens/gif2png.gif" alt="Imagem 3">
+        </div>
+        <div class="slide">
+        <img src="imagens/4.png.png" alt="Imagem 4">
+        </div>
+        </div>
+          
+    </section>
+
+<!--Parte Sobre-->
+<section id="sobre">
+            <div class="sobre">
+                <!--<h2>Sobre Nós</h2>-->
+                <img src="images/12.png" alt="sobre-nos">
+                <img src="images/13.png" alt="sobre-nos">
+            </div>
+    </section>
+
+<!--Parte sobre a dra-->
+   <section id="dra">
+            <div class="dra">
+                <img src="images/drapnf.png" alt="dra">
+            </div>
+    </section>
+
+</section>
+<!--Parte de serviços ofertados-->
+   <section id="Servico">
+            <div class="Servicos">
+                <h2>Nossos Serviços</h2>
+                <img src="images/1apng.png" alt="ofertado">
+                <img src="images/2bpng.png" alt="ofertado">
+            </div>
+    </section>
+<!--Parte conênios-->
+    <section id="convenios">
+            <div class="convenios">
+                <h2>Convênios Parceiros</h2>
+                <img src="images/conveviospng.png" alt="Parceiros">
+            </div>
+    </section>
+<!--Parte contato-->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p3> Aceitamos PIX, Debito ou cartão de crédito com parcelamentos em até 12 vezes.</p>
+        <p>Telefone: <a href="tel:+5548996162609">(48) 99616-2609</a></p>
+        <p>Instagram: <a href="https://instagram.com/le_harmonii" target="_blank">@le_harmonii</a></p>
+        <p>Endereço: R. Idalina Pereira dos Santos, 67 - sala 907, Florianópolis - SC</p>
+        <iframe 
+            src="https://www.google.com/maps?q=Edifício+Blue+Diamond+Harmonii+-+Odontologia+&+Harmonização+Facial+-+R.+Idalina+Pereira+dos+Santos,+67+-+sala+907+-+Agronômica,+Florianópolis+-+SC,+88025-260&output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+<!--Botão whats-->
+    <a 
+        href="https://wa.me/5548996162609" class="whatsapp-button" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" />
+
+    </a>
+<!--Parte de direitos reservados-->
+    <footer>
+        <p>© 2025 Le Harmonii. Todos os direitos reservados.</p>
+    </footer>
+
+<!--Botão menu mobile-->
+
+    <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }
+    </script>
+
+
+</body>
+</html>
