@@ -124,6 +124,19 @@ h2 {
 width: 100%;
 height: 20%;
 }
+/*ocultar pagina web/mobile*/
+.img-web-only {
+display: block;  
+}
+.img-mobile-only {
+display: none;  
+}
+
+.sobre2 img {
+width: 100%;
+height: 20%;
+}
+
 
 /*dra*/
 .dra img {
