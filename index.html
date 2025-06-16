@@ -115,13 +115,42 @@
 
 </section>
 <!--Parte de serviços ofertados-->
-   <section id="Servico">
+
+<section id="Servico">
             <div class="Servicos">
                 <h2>Nossos Serviços</h2>
-                <img src="images/1apng.png" alt="ofertado">
-                <img src="images/2bpng.png" alt="ofertado">
             </div>
     </section>
+    
+    <ul class="lista-palavras">
+         <li class="palavra">Clínia Geral</li>
+         <li class="palavra">Limpeza</li>
+         <li class="palavra">Clareamento</li>
+         <li class="palavra">Implantes</li>
+         <li class="palavra">Extrações</li>
+         <li class="palavra">Endodontia (Tratamento de Canal)</li>
+         <li class="palavra">Restaurações</li>
+         <li class="palavra">Harmonização</li>
+         <li class="palavra">Botox</li>
+         <li class="palavra">ULTRAFORMER</li>
+    </ul>   
+
+<script>
+  const palavras = document.querySelectorAll('.palavra');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visivel');
+      }
+    });
+  }, {
+    threshold: 0.1 // ativa quando 50% da palavra está visível
+  });
+
+  palavras.forEach(palavra => observer.observe(palavra));
+</script>
+
 
 <!--Parte conênios-->
     <section id="convenios1">
@@ -133,7 +162,7 @@
     <section id="convenios">
             <div class="convenios">
                <!-- <h2>Convênios Parceiros</h2>-->
-                <img src="images/Convênios, Amil, Sul América, Uniodonto, Porto Saude, Celos.png" alt="Atendimento por conênio: Amil, Sul America, Uniodonto, Porto Saúde, Sempre Odonto, Celos, BRDE">
+                <img src="images/conveviospng.png" alt="Atendimento por conênio: Amil, Sul America, Uniodonto, Porto Saúde, Sempre Odonto, Celos, BRDE">
             </div>
     </section>
 

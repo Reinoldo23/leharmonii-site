@@ -113,7 +113,7 @@ font-family: 'Lora', sans-serif;
 }
 /* Tamanho Título*/
 h2 { 
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
     max-width: 500;
 
@@ -163,6 +163,28 @@ width: 60%;
 height: 10%;
 }
 
+.lista-palavras {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.palavra {
+  font-family: 'Belezza', serif;
+  font-size: 10px;
+  color: #c6b1a6;      /* Cor da paleta Le Harmonii */
+  opacity: 0.5;
+  transition: font-size 0.6s ease, opacity 0.6s ease, color 0.6s ease;
+  margin: 20px 0;
+}
+
+/* Quando a palavra entra na tela */
+.palavra.visivel {
+  font-size: 25px;
+  opacity: 5;
+  color: #8a6c5a;       /* Cor mais escura ao destacar */
+}
 
 /* Parceiros*/
 .convenios1 img {
@@ -172,7 +194,7 @@ object-fit: cover;
 margin-top: 10px;
 }
 .convenios img {
-width: 25%;
+width: 70%;
 height: 20%;
 object-fit: cover;
 }
