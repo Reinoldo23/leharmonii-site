@@ -291,9 +291,10 @@
     .topbar-right { gap: 14px; }
     .what-img { float: none; width: 150px; margin: 0 auto 20px; }
     .topbar-back { display: none; }
-    .hero-image { height: auto; }
+    .hero-image { height: auto; overflow: visible; }
+    .hero { overflow: visible; }
     .hero-image picture, .hero-image img { height: auto; }
-    .hero-image img { aspect-ratio: 1038 / 1123; object-position: center top; }
+    .hero-image img { width: 100%; aspect-ratio: 1038 / 1123; object-fit: contain; object-position: center top; }
     .hero-content { padding: 32px 24px 40px; }
     .hero-content .btn-primary, .hero-content .btn-gold { display: block; text-align: center; margin-top: 0; }
     .hero-content .btn-gold { margin-top: 12px; }
@@ -308,12 +309,6 @@
     .topbar-back { font-size: 8px; letter-spacing: 1px; }
     .topbar-logo { font-size: 18px; letter-spacing: 2px; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-image { height: 60vw; }
-    .hero-content { padding: 40px 28px; }
-    .cred-strip { grid-template-columns: 1fr 1fr; }
-    .cred-item { border-right: none; border-bottom: 1px solid #444; }
-    .cred-item:nth-child(odd) { border-right: 1px solid #444; }
-    .cred-item:last-child { border-bottom: none; }
     .section { padding: 50px 24px; }
     .two-col { grid-template-columns: 1fr; gap: 30px; }
     .three-col { grid-template-columns: 1fr; }
