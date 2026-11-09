@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Português -->
+  <url>
+    <loc>https://www.leharmonii.com.br/endodontista-florianopolis</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.leharmonii.com.br/endodontista-florianopolis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leharmonii.com.br/endodontist-florianopolis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leharmonii.com.br/endodontista-florianopolis"/>
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://www.leharmonii.com.br/endodontist-florianopolis</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.leharmonii.com.br/endodontista-florianopolis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.leharmonii.com.br/endodontist-florianopolis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.leharmonii.com.br/endodontista-florianopolis"/>
+  </url>
+
+  <!-- Página de dúvidas: remova os comentários e ajuste o endereço
+       para o mesmo URL em que ela abre no navegador.
+  <url>
+    <loc>https://www.leharmonii.com.br/duvidas-tratamento-de-canal-florianopolis</loc>
+    <lastmod>2026-11-08</lastmod>
+  </url>
+  -->
+
+</urlset>
