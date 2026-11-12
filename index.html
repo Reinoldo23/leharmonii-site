@@ -90,14 +90,6 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quais planos odontológicos atendemos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Atendemos plano AMIL Dental e UNIODONTO, ambos com atendimento diferencial para tratamento de canal."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Posso solicitar reembolso do tratamento pelo meu plano de saúde?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -110,6 +102,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Sim. Muitas pessoas sentem ansiedade ou medo ao ouvir falar em tratamento de canal. A Dra. Morgane é especialista em lidar com pacientes que passam por essas situações, oferecendo um atendimento acolhedor, explicando cada etapa do procedimento e garantindo o máximo de conforto durante o tratamento. Com anestesia moderna e técnicas avançadas, o procedimento costuma ser muito mais tranquilo do que a maioria das pessoas imagina."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "É normal ter medo de dentista ou trauma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, é muito comum. Muitas pessoas sentem medo de dentista, seja por ansiedade ou por experiências difíceis vividas no passado, e esse sentimento é totalmente respeitado. A Dra. Morgane é especialista em lidar com medo e ansiedade: explica cada etapa, respeita o seu tempo e utiliza anestesia moderna para que você se sinta seguro e confortável durante todo o atendimento."
       }
     },
     {
@@ -134,14 +134,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "O tratamento de canal dura entre 1h e 1h30, geralmente usamos tecnologia avançada para que seja realizado em uma única consulta. Porém, dependendo da avaliação da nossa especialista, pode ser necessário mais consultas."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quanto custa o tratamento de canal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O valor é variável para cada dente, não tendo um valor fixo, por isso é necessário uma avaliação mais detalhada com a nossa especialista. A avaliação é sem custo e o orçamento para tratamento de canal é justo e acessível."
       }
     },
     {
@@ -220,6 +212,12 @@
   .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; color: var(--white); display: block; }
   .stat-label { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #999; margin-top: 4px; display: block; }
   .stars { color: var(--gold); font-size: 18px; letter-spacing: 2px; }
+
+  /* Faixa de destaque: nota Google + idiomas (igual à página de tratamento de canal) */
+  .strip{background:var(--dark-bg);color:#ccc;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 40px;padding:16px 20px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:400;letter-spacing:.5px;border:0}
+  .strip-i{display:flex;align-items:center;gap:10px}
+  .strip .stars{display:inline-flex;gap:2px;letter-spacing:0}.strip .stars svg{width:18px;height:18px;fill:#f5b81c}
+  @media(max-width:800px){.strip{font-size:13px;padding:14px 16px;gap:10px}.strip .stars svg{width:17px;height:17px}}
   .languages-block { display: flex; flex-direction: column; align-items: center; gap: 8px; }
   .lang-flags { display: flex; gap: 8px; align-items: center; }
   .flag-item { display: flex; flex-direction: column; align-items: center; gap: 3px; }
@@ -450,6 +448,32 @@
   .menu-overlay a:hover { color: var(--gold); }
   .menu-overlay .menu-divider { width: 40px; height: 1px; background: var(--gold); opacity: 0.5; margin: 6px 0; }
   .menu-overlay .menu-wa { margin-top: 14px; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; background: var(--gold); color: #fff; padding: 14px 28px; border-radius: 2px; }
+  /* SUA ENDODONTISTA */
+  .endo-sec{background:var(--cream);padding:70px 60px}
+  .endo-wrap{max-width:760px;margin:0 auto;text-align:center}
+  .endo-label{font-family:'Montserrat',sans-serif;font-weight:600;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .endo-wrap p{font-family:'Montserrat',sans-serif;font-size:16px;line-height:1.8;color:var(--mid);margin:0}
+  .endo-wrap p strong{color:var(--dark)}
+  .endo-wrap img{width:100%;max-width:330px;justify-self:center;border-radius:12px;display:block;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+  @media(max-width:800px){.endo-sec{padding:44px 22px}.endo-wrap p{font-size:15px}}
+  .endo-creds{list-style:none;max-width:760px;margin:44px auto 0;padding:0;text-align:center}
+  .endo-creds li{font-family:'Montserrat',sans-serif;font-weight:500;font-size:clamp(14px,1.6vw,17px);line-height:1.6;letter-spacing:.3px;color:var(--dark);background:var(--white);border-radius:8px;padding:13px 18px;margin-bottom:8px}
+  @media(max-width:800px){.endo-creds{margin-top:30px}.endo-creds li{font-size:14.5px;padding:12px 14px;margin-bottom:7px}}
+  .endo-btn-wrap{text-align:center;margin-top:30px}
+  .endo-btn{display:inline-block;width:auto;background:var(--dark);color:#fff;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:600;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;padding:15px 30px;border-radius:2px;transition:background .3s}
+  .endo-btn:hover{background:var(--gold)}
+  /* CAPA: foto com fade inferior e título subindo sobre ela */
+  .hero { background: #d4ccc0; }
+  .hero-left { background: transparent; }
+  .hero-right { background: transparent; }
+  .hero-left img { -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%); mask-image: linear-gradient(to bottom, #000 82%, transparent 100%); }
+  @media (max-width: 768px) {
+    .hero-left img { -webkit-mask-image: linear-gradient(to bottom, #000 50%, transparent 100%); mask-image: linear-gradient(to bottom, #000 50%, transparent 100%); }
+    .hero > .hero-right { position: relative; z-index: 2; margin-top: -110px; padding-top: 0; }
+  }
+  .foto-dra{background:var(--white);padding:60px 24px 0;text-align:center}
+  .foto-dra img{width:100%;max-width:330px;margin:0 auto;border-radius:12px;display:block;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+  @media(max-width:800px){.foto-dra{padding:44px 22px 0}.foto-dra img{max-width:72%}}
 </style>
 
 <script type="application/ld+json">
@@ -574,63 +598,37 @@
   </div>
 </section>
 
-<!-- TRANSIÇÃO CAPA / PRIMEIRA PÁGINA -->
-<div id="transicaoCapa" style="background:var(--dark-bg);padding:12px 16px;text-align:center;">
-  <div style="max-width:760px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px;">
-    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(14px,1.5vw,16px);font-style:italic;font-weight:500;color:#f5f0ea;line-height:1.3;margin:0;">Somos <strong style="color:var(--gold);font-weight:700;">nota 5</strong> no Google <span style="color:var(--gold);letter-spacing:2px;">★★★★★</span></p>
-    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(14px,1.5vw,16px);font-style:italic;font-weight:500;color:#f5f0ea;line-height:1.3;margin:0;">Atendemos em <strong style="color:var(--gold);font-weight:700;">vários idiomas</strong></p>
-  </div>
+<!-- FAIXA: NOTA GOOGLE + IDIOMAS -->
+<div class="strip">
+  <div class="strip-i"><span class="stars" role="img" aria-label="Nota 5 de 5 no Google"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/></svg></span><span>Nota 5 no Google</span></div>
+  <div class="strip-i"><span>Atendemos em vários idiomas</span></div>
 </div>
 
-<!-- CREDENCIAIS -->
-<div id="credenciais" style="background:var(--white);text-align:center;">
-  <div>
-    <p class="cred-row"><strong style="color:var(--gold);font-weight:700;">CRO SC 13142</strong></p>
-    <p class="cred-row">Formada na <strong style="color:var(--gold);font-weight:700;">UFSC</strong></p>
-    <p class="cred-row"><strong style="color:var(--gold);font-weight:700;">Mestre, Doutora e Especialista</strong> em Endodontia pela UFSC</p>
-    <p class="cred-row">Mais de <strong style="color:var(--gold);font-weight:700;">15 anos</strong> referência em tratamento de canal</p>
-    <p class="cred-row">Mais de <strong style="color:var(--gold);font-weight:700;">5 mil dentes</strong> reabilitados</p>
-    <p class="cred-row">Microscopia <strong style="color:var(--gold);font-weight:700;">Eletrônica</strong></p>
-    <p class="cred-row"><strong style="color:var(--gold);font-weight:700;">Protocolo</strong> de tratamento de canal sem dor</p>
-    <p class="cred-row">Especialista em lidar com <strong style="color:var(--gold);font-weight:700;">medo / ansiedade</strong></p>
-  </div>
-</div>
-
-<!-- FEATURES -->
-<section class="features-section reveal" id="resultados">
-  <div style="max-width:500px;margin:0 auto 30px;text-align:center;">
-
-    <!-- VÍDEO VERTICAL AUTOPLAY -->
-    <div style="max-width:320px;margin:0 auto;border-radius:6px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.13);aspect-ratio:9/16;background:var(--cream);">
-      <video
-        src="antes-depois.mp4"
-        autoplay
-        muted
-        loop
-        playsinline
-        webkit-playsinline="true"
-        x5-playsinline="true"
-        preload="metadata"
-        style="width:100%;height:100%;object-fit:cover;display:block;">
-      </video>
+<!-- SUA ENDODONTISTA EM FLORIANÓPOLIS -->
+<section class="endo-sec">
+  <div class="endo-wrap">
+    <div>
+      <p>Dentista Dra Morgane Marion (CRO SC/13142) atua em Florianópolis, especialista em endodontia (tratamento de canal), com mestrado e doutorado pela UFSC. Coautora de diversos artigos científicos e relatos de experiência nas áreas de saúde bucal, disfunção temporomandibular e sistemas endodônticos, aliando conhecimento científico, experiência clínica e dedicação à excelência no tratamento odontológico.</p>
     </div>
-
-    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2.4vw,25px);font-style:italic;font-weight:500;color:var(--dark);letter-spacing:0.3px;margin-top:26px;">Um atendimento diferente <strong style="color:var(--gold);font-weight:700;">como você merece</strong>!</p>
-
-
   </div>
+  <ul class="endo-creds">
+    <li>Mais de 15 anos Referência Em Tratamento de Canal</li>
+    <li>Mais de 5 mil Dentes Reabilitados</li>
+    <li>Referência em Microscopia Eletrônica</li>
+    <li>Especialista Em Lidar Com Medo e Ansiedade</li>
+  </ul>
+  <div class="endo-btn-wrap"><a class="endo-btn" href="http://lattes.cnpq.br/1100195194037133" target="_blank" rel="noopener" title="Currículo Lattes da endodontista Dra. Morgane Marion">Meu currículo acadêmico</a></div>
 </section>
 
 <!-- SPECIALTIES -->
 <section class="specialties-section reveal" id="especialidades">
   <div class="specialties-left">
-    <h2 class="section-title">Todas as<br>Especialidades</h2>
-    <p>Contamos com uma equipe especializada em todas as áreas, complementando os tratamentos de odontologia para oferecer um atendimento completo e integrado.</p>
+    <h2 class="section-title">Meus Atendimentos</h2>
   </div>
   <div class="specialties-grid">
     <div class="specialty-card"><span class="specialty-name" id="urgencias-odontologicas-florianopolis">Urgências Odontológicas</span><span class="spec-links"><a class="spec-link" href="/urgencia-odontologica-florianopolis">Saiba mais →</a></span></div>
     <div class="specialty-card"><span class="specialty-name" id="limpeza-dental-florianopolis">Profilaxia (Limpeza Dental)</span><span class="spec-links"><a class="spec-link" href="/limpeza-dental-florianopolis">Saiba mais →</a></span></div>
-    <div class="specialty-card"><span class="specialty-name" id="tratamento-de-canal-florianopolis">Endodontia (Tratamento de Canal)</span><span class="spec-links"><a class="spec-link" href="/endodontista">Saiba mais →</a></span></div>
+    <div class="specialty-card"><span class="specialty-name" id="tratamento-de-canal-florianopolis">Endodontia (Tratamento de Canal)</span><span class="spec-links"><a class="spec-link" href="https://www.leharmonii.com.br/tratamento-de-canal-florianopolis">Saiba mais →</a></span></div>
     <div class="specialty-card"><span class="specialty-name" id="alinhadores-invisaveis-florianopolis">Alinhadores e Contenção</span></div>
     <div class="specialty-card"><span class="specialty-name" id="clareamento-dental-florianopolis">Clareamento</span><span class="spec-links"><a class="spec-link" href="/clareamento-dental-florianopolis">Saiba mais →</a></span></div>
     <div class="specialty-card"><span class="specialty-name" id="implante-dentario-florianopolis">Implantes</span></div>
@@ -769,6 +767,57 @@
 
 </section>
 
+<!-- FEATURES -->
+<section class="features-section reveal" id="resultados">
+  <div style="max-width:500px;margin:0 auto 30px;text-align:center;">
+    <h2 class="section-title">Meus Resultados</h2>
+
+    <!-- VÍDEO VERTICAL AUTOPLAY -->
+    <div style="max-width:230px;margin:0 auto;border-radius:6px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.13);aspect-ratio:9/16;background:var(--cream);">
+      <video
+        src="antes-depois.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline="true"
+        x5-playsinline="true"
+        preload="metadata"
+        style="width:100%;height:100%;object-fit:cover;display:block;">
+      </video>
+    </div>
+
+    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2.4vw,25px);font-style:italic;font-weight:500;color:var(--dark);letter-spacing:0.3px;margin-top:26px;">Um atendimento diferente <strong style="color:var(--gold);font-weight:700;">como você merece</strong>!</p>
+
+
+  </div>
+</section>
+
+<!-- FOTO DRA. MORGANE -->
+<section class="foto-dra reveal">
+  <img src="tratamentodecanaldramorgane.png" alt="Dra. Morgane Marion, mestre e doutora em Endodontia pela UFSC, endodontista em Florianópolis" title="Dra. Morgane Marion – Endodontista" loading="lazy">
+</section>
+
+<!-- MISSION -->
+<section class="mission-section reveal" id="sobre-dra-morgane">
+  <div class="mission-text">
+    <h2 class="mission-headline"><em>Minha missão</em> é proporcionar saúde, confiança e bem-estar por meio de uma odontologia humanizada, moderna e focada na excelência dos resultados.</h2>
+    <p>Também atuo e possuo especialização e cursos de aperfeiçoamento em Harmonização Orofacial.</p>
+    <div class="bio-collapse" id="bioCollapse">
+      <p>Há mais de 15 anos dedico minha carreira à busca constante pela excelência, unindo ciência, técnica e sensibilidade em cada atendimento. Meu compromisso é oferecer tratamentos seguros, modernos e personalizados, sempre com foco na saúde, bem-estar e satisfação de cada paciente.</p>
+      <p>Minha atuação é voltada para a estética dental, preservação dos dentes naturais e harmonização facial, sempre com o propósito de valorizar a beleza individual e promover resultados naturais, elegantes e duradouros.</p>
+      <p>Acredito que um sorriso saudável vai além da estética, ele reflete confiança, bem-estar e qualidade de vida. Por isso, cada tratamento é planejado de forma personalizada, respeitando a singularidade de cada paciente.</p>
+    </div>
+    <div class="mission-btns">
+      <button class="mission-btn" id="bioToggleBtn" onclick="toggleBio()">Saiba mais sobre mim</button>
+      <a class="mission-btn" href="http://lattes.cnpq.br/1100195194037133" target="_blank" rel="noopener noreferrer">Meu Currículo Acadêmico</a>
+      <a class="mission-btn" href="/blog">Blog, Artigos e Materiais →</a>
+    </div>
+  </div>
+  <div class="mission-image">
+    <video src="apresentação_Dra_Morgane.mp4" autoplay muted loop playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" controls style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"></video>
+  </div>
+</section>
 
 <!-- CONHEÇA O NOSSO ESPAÇO -->
 <section id="espacoSection" style="background:var(--white);padding:40px 60px 50px;text-align:center;">
@@ -844,27 +893,6 @@
 
 
 
-<!-- MISSION -->
-<section class="mission-section reveal" id="sobre-dra-morgane">
-  <div class="mission-text">
-    <h2 class="mission-headline"><em>Minha missão</em> é proporcionar saúde, confiança e bem-estar por meio de uma odontologia humanizada, moderna e focada na excelência dos resultados.</h2>
-    <p>Sou graduada pela Universidade Federal de Santa Catarina (UFSC), especialista, mestre e doutora em Endodontia, com diversos artigos científicos publicados na área. Além disso, possuo especialização e cursos de aperfeiçoamento em Harmonização Orofacial.</p>
-    <div class="bio-collapse" id="bioCollapse">
-      <p>Há mais de 15 anos dedico minha carreira à busca constante pela excelência, unindo ciência, técnica e sensibilidade em cada atendimento. Meu compromisso é oferecer tratamentos seguros, modernos e personalizados, sempre com foco na saúde, bem-estar e satisfação de cada paciente.</p>
-      <p>Minha atuação é voltada para a estética dental, preservação dos dentes naturais e harmonização facial, sempre com o propósito de valorizar a beleza individual e promover resultados naturais, elegantes e duradouros.</p>
-      <p>Acredito que um sorriso saudável vai além da estética, ele reflete confiança, bem-estar e qualidade de vida. Por isso, cada tratamento é planejado de forma personalizada, respeitando a singularidade de cada paciente.</p>
-    </div>
-    <div class="mission-btns">
-      <button class="mission-btn" id="bioToggleBtn" onclick="toggleBio()">Saiba mais sobre mim</button>
-      <a class="mission-btn" href="http://lattes.cnpq.br/1100195194037133" target="_blank" rel="noopener noreferrer">Meu Currículo Acadêmico</a>
-      <a class="mission-btn" href="/blog">Blog, Artigos e Materiais →</a>
-    </div>
-  </div>
-  <div class="mission-image">
-    <video src="apresentação_Dra_Morgane.mp4" autoplay muted loop playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" controls style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;"></video>
-  </div>
-</section>
-
 <!-- MULTILINGUAL -->
 <section style="background:var(--dark-bg);padding:50px 60px;text-align:center;">
   <p style="font-size:9px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">For International Patients</p>
@@ -895,17 +923,7 @@
 
   <div class="faq-item">
     <button class="faq-question" onclick="toggleFaq(this)">
-      <span>1. Quais planos odontológicos atendemos?</span>
-      <div class="faq-icon">+</div>
-    </button>
-    <div class="faq-answer">
-      <p>Atendemos plano AMIL Dental e UNIODONTO, ambos com atendimento diferencial para tratamento de canal.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      <span>2. Posso solicitar reembolso do tratamento pelo meu plano de saúde?</span>
+      <span>1. Posso solicitar reembolso do tratamento pelo meu plano de saúde?</span>
       <div class="faq-icon">+</div>
     </button>
     <div class="faq-answer">
@@ -915,11 +933,21 @@
 
   <div class="faq-item">
     <button class="faq-question" onclick="toggleFaq(this)">
-      <span>3. É normal ter medo de fazer tratamento de canal?</span>
+      <span>2. É normal ter medo de fazer tratamento de canal?</span>
       <div class="faq-icon">+</div>
     </button>
     <div class="faq-answer">
       <p>Sim. Muitas pessoas sentem ansiedade ou medo ao ouvir falar em tratamento de canal. A Dra. Morgane é especialista em lidar com pacientes que passam por essas situações, oferecendo um atendimento acolhedor, explicando cada etapa do procedimento e garantindo o máximo de conforto durante o tratamento. Com anestesia moderna e técnicas avançadas, o procedimento costuma ser muito mais tranquilo do que a maioria das pessoas imagina.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      <span>3. É normal ter medo de dentista ou trauma?</span>
+      <div class="faq-icon">+</div>
+    </button>
+    <div class="faq-answer">
+      <p>Sim, é muito comum. Muitas pessoas sentem medo de dentista, seja por ansiedade ou por experiências difíceis vividas no passado, e esse sentimento é totalmente respeitado. A Dra. Morgane é especialista em lidar com medo e ansiedade: explica cada etapa, respeita o seu tempo e utiliza anestesia moderna para que você se sinta seguro e confortável durante todo o atendimento.</p>
     </div>
   </div>
 
@@ -955,17 +983,7 @@
 
   <div class="faq-item">
     <button class="faq-question" onclick="toggleFaq(this)">
-      <span>7. Quanto custa o tratamento de canal?</span>
-      <div class="faq-icon">+</div>
-    </button>
-    <div class="faq-answer">
-      <p>O valor é variável para cada dente, não tendo um valor fixo, por isso é necessário uma avaliação mais detalhada com a nossa especialista. Não se preocupe, nossa avaliação é sem custo e nosso orçamento para tratamento de canal é um preço justo e que cabe no seu bolso.</p>
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question" onclick="toggleFaq(this)">
-      <span>8. Quais as formas de pagamento?</span>
+      <span>7. Quais as formas de pagamento?</span>
       <div class="faq-icon">+</div>
     </button>
     <div class="faq-answer">
